@@ -1,6 +1,6 @@
 trigger: none
 
-pool: Default
+pool: msh
 
 steps:
 - task: NodeTool@0
@@ -17,6 +17,6 @@ steps:
   displayName: 'npm install and build'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'Angular-SpringBoot-REST-JWT/dist'
+    PathtoPublish: 'Angular-SpringBoot-REST-JWT'
     ArtifactName: 'thammuluri'
     publishLocation: 'Container'
